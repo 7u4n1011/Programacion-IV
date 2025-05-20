@@ -1,15 +1,19 @@
-# Creamos la funcion que nos pide el enunciado
-def ahorcado (letra, secret_w):
+# Función correcta para el juego del ahorcado
+def ahorcado(letra, secret_w):
     resultado = []
-    
-    for i in resultado:
+    for i in secret_w:
         if i == letra:
             resultado.append(letra)
         else:
             resultado.append('_')
-    
     return resultado
 
+# Probamos la función
 palabra = 'ambulancia'
-print
-letra_ingresada
+letra_ingresada = 'a'
+
+resul = ahorcado(letra_ingresada, palabra)
+
+print("Palabra secreta:", palabra)
+print("Letra ingresada:", letra_ingresada)
+print("Resultado:", resul)
